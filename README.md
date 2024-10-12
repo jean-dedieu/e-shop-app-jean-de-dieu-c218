@@ -1,1 +1,5 @@
-# e-shop-app-jean-de-dieu-c218
+# Boutique E-Commerce des DVD
+
+#eMIAGE
+
+##Par Jean de Dieu TWAGIRUMUHOZA
