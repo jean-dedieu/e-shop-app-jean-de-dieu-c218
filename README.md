@@ -1,5 +1,5 @@
 # Boutique E-Commerce des DVD
 
-#eMIAGE
+# eMIAGE
 
-##Par Jean de Dieu TWAGIRUMUHOZA
+## Par Jean de Dieu TWAGIRUMUHOZA
