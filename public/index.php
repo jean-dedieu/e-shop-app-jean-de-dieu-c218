@@ -8,6 +8,23 @@ $connect= mysqli_connect($DB_HOST, $DB_USER, $DB_PASSWORD, $DB_NAME) or die("Err
 
 $query = $connect->query("SELECT username FROM `users`");
 
+// Debugging: Check connection status
+if (!$connect) {
+    // If the connection fails, output the error
+    die("Database connection failed: " . mysqli_connect_error());
+} else {
+    // Debug: If the connection succeeds, output success message
+    var_dump("Connection successful!");
+}
+
+// Run the query
+$query = $connect->query("SELECT username FROM `users`");
+
+// Debugging: Check if the query executed successfully
+if (!$query) {
+    // If the query fails, output the error
+    die("Query failed: " . $connect->error);
+}
 ?>
 
 <table>
@@ -17,7 +34,8 @@ $query = $connect->query("SELECT username FROM `users`");
     <?php
     while($row = $query->fetch_array()){
         echo "<tr>
-          <td>".$row['username']."</td>";
+                <td>".htmlspecialchars($row['username'])."</td>
+             </tr>";
     }
     ?>
 </table>
