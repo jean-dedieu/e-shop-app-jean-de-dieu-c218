@@ -4,5 +4,20 @@ $DB_USER = "hhxix97i153a8gn0";
 $DB_NAME = "qnrmqtu379xet78q";
 $DB_PASSWORD = "j6aj08bi9xdazdug";
 
-$connect = mysqli_connect($DB_HOST, $DB_USER, $DB_PASSWORD, $DB_NAME) or die("Erreur de connexion à la base de données");
+$connect= mysqli_connect($DB_HOST, $DB_USER, $DB_PASSWORD, $DB_NAME) or die("Erreur de connexion à la base de données");
+
+$query = $connect->query("SELECT username FROM `users`");
+
 ?>
+
+<table>
+    <tr>
+        <td>Nom Utilisateur</td>
+    </tr>
+    <?php
+    while($row = $query->fetch_array()){
+        echo "<tr>
+          <td>".$row['username']."</td>";
+    }
+    ?>
+</table>
