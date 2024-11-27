@@ -1,5 +1,9 @@
 {
- {
+    "name": "e-shop-app-jean-de-dieu-c218",
+    "description": "Projet eMIAGE Master 1 UPJV",
+    "require": {
+        "php": "^8.0"
+    },
     "scripts": {
         "post-install-cmd": [
             "chmod -R 755 public"
@@ -10,6 +14,4 @@
             "document-root": "public"
         }
     }
-}
-   
 }
