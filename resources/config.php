@@ -17,14 +17,14 @@ defined("TEMPLATE_BACK") ? null : define("TEMPLATE_BACK", __DIR__ . DS . "templa
 defined("UPLOAD_DIRECTORY") ? null : define("UPLOAD_DIRECTORY", __DIR__ . DS . "uploads");
 
 
-defined("DB_HOST") ? null : define("DB_HOST", "localhost");
-defined("DB_USER") ? null : define("DB_USER","root");
+defined("DB_HOST") ? null : define("DB_HOST", "e7qyahb3d90mletd.chr7pe7iynqr.eu-west-1.rds.amazonaws.com");
+defined("DB_USER") ? null : define("DB_USER","hhxix97i153a8gn0");
 
 
 
-defined("DB_PASS") ? null : define("DB_PASS", "root");
+defined("DB_PASS") ? null : define("DB_PASS", "j6aj08bi9xdazdug");
 
-defined("DB_NAME") ? null : define("DB_NAME",  "ecom_stripe");
+defined("DB_NAME") ? null : define("DB_NAME",  "qnrmqtu379xet78q");
 
 
 
