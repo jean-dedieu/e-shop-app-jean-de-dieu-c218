@@ -1,24 +1,8 @@
 <?php
-require __DIR__ . '/../app/controllers/ProductController.php';
-require __DIR__ . '/../app/models/Database.php';
+$DB_HOST = "e7qyahb3d90mletd.chr7pe7iynqr.eu-west-1.rds.amazonaws.com";
+$DB_USER = "hhxix97i153a8gn0";
+$DB_NAME = "qnrmqtu379xet78q";
+$DB_PASSWORD = "j6aj08bi9xdazdug";
 
-$controller = new ProductController();
-
-$request = $_SERVER['REQUEST_URI'];
-$method = $_SERVER['REQUEST_METHOD'];
-
-// Routing simple
-if ($request == '/' && $method == 'GET') {
-    $controller->index();
-} elseif (preg_match('/^\/product\/(\d+)$/', $request, $matches)) {
-    $controller->show($matches[1]);
-} elseif (preg_match('/^\/add-to-cart\/(\d+)$/', $request, $matches)) {
-    $controller->addToCart($matches[1]);
-} elseif ($request == '/cart' && $method == 'GET') {
-    $controller->showCart();
-} elseif ($request == '/checkout' && $method == 'GET') {
-    $controller->checkout();
-} else {
-    echo "404 - Page non trouvée";
-}
+$connect = mysqli_connect($DB_HOST, $DB_USER, $DB_PASSWORD, $DB_NAME) or die("Erreur de connexion à la base de données");
 ?>
