@@ -1,11 +1,30 @@
 {
+    "config": {
+        "platform-check": false
+    },
     "require": {
-        "stripe/stripe-php": "^7.113",
+        "php": "^8.2",
+        "symfony/console": "^6.0",
+        "composer/composer": "^2.0",
+        "ext-json": "*",
+        "ext-mbstring": "*",
+        "ext-curl": "*",
+        "stripe/stripe-php": "^7.128",
         "vlucas/phpdotenv": "^5.4"
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "chmod -R 755 public"
+        ]
     },
     "autoload": {
         "files": [
             "resources/helpers/helpers.php"
         ]
+    },
+    "extra": {
+        "heroku": {
+            "document-root": "public"
+        }
     }
 }
