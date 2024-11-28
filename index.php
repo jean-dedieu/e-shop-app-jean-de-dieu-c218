@@ -1,11 +1,4 @@
 <?php
-$publicPath = __DIR__ . '/public';
-
-// Ensure the file exists
-if (is_dir($publicPath)) {
-    require_once $publicPath . '/index.php';
-} else {
-    http_response_code(404);
-    echo "Public directory not found.";
-    exit;
-}
+// Redirect to the public/index.php
+header("Location: /e-shop-app-jean-de-dieu-c218/public/");
+exit;
