@@ -1,4 +1,5 @@
-<?php require_once("../resources/config.php"); ?>
+<?php require_once __DIR__ . '/../resources/config.php';
+?>
 
 <?php include(TEMPLATE_FRONT . DS . "header.php") ?>
 
