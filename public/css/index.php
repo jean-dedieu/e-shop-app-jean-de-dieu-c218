@@ -3,7 +3,7 @@
 <?php include(TEMPLATE_FRONT . DS . "header.php") ?>
 
 
-<!-- Debut contenu de la page -->
+<!-- Début contenu de la page -->
 <div class="container">
 
     <div class="row">
@@ -29,7 +29,7 @@
                 <?php get_products_with_pagination(10); ?>
 
 
-            </div><!-- ROw ends here-->
+            </div><!-- fin lignes(Rows)-->
 
         </div>
 
