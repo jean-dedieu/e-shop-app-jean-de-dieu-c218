@@ -1,4 +1,4 @@
 <?php
 // Redirect to the public/index.php
-header("Location: /e-shop-app-jean-de-dieu-c218/public/");
+header("Location: /public/index.php");
 exit;
