@@ -26,9 +26,7 @@
 
 <?php else: ?>
 
-    <div class="row text-center">
-        <h1 >No Slides</h1>
-        <p>Go and create some slides <a href="http://localhost:8888/ecom/public/admin/index.php?slides">HERE</a></p>
+    <div class="#">
     </div>
 
 
