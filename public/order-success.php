@@ -48,9 +48,9 @@
 
         ?>
 
-        <h1 class="text-center">Thank you</h1>
+        <h1 class="text-center">Merci</h1>
         <h3 class="text-center"><?= $customer->name?></h3>
-        <p class="text-center">We will send you and email here <mark><?= $customer->email; ?></mark><?= $customer->name?></p>
+        <p class="text-center">Nous vous enverrons un courriel <mark><?= $customer->email; ?></mark><?= $customer->name?></p>
 
     </div>
 </div>

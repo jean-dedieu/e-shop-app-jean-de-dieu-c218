@@ -3,7 +3,7 @@
 
 <div class="row">
 <h1 class="page-header">
-   Add Product
+   Ajout Produit
 </h1>
 </div>
 
@@ -15,14 +15,14 @@
 <div class="col-md-8">
 
 <div class="form-group">
-    <label for="product-title">Product Title </label>
+    <label for="product-title">Titre Produit </label>
         <input type="text" name="product_title" class="form-control">
 
     </div>
 
 
     <div class="form-group">
-           <label for="product-title">Product Description</label>
+           <label for="product-title">Description Produit</label>
       <textarea name="product_description" id="" cols="30" rows="10" class="form-control"></textarea>
     </div>
 
@@ -31,7 +31,7 @@
     <div class="form-group row">
 
       <div class="col-xs-3">
-        <label for="product-price">Product Price</label>
+        <label for="product-price">Prix Produit</label>
         <input min="0" type="number" name="product_price" class="form-control" size="60">
       </div>
     </div>
@@ -39,7 +39,7 @@
 
 
     <div class="form-group">
-           <label for="product-title">Product Short Description</label>
+           <label for="product-title">Description brève produit</label>
       <textarea name="short_desc" id="" cols="30" rows="3" class="form-control"></textarea>
     </div>
 
@@ -64,10 +64,10 @@
      <!-- Product Categories-->
 
     <div class="form-group">
-         <label for="product-title">Product Category</label>
+         <label for="product-title">Catégorie produit</label>
 
         <select name="product_category_id" id="" class="form-control">
-            <option value="">Select Category</option>
+            <option value="">Séléfctionner Catégorie</option>
 
             <?php show_categories_add_product_page(); ?>
 
@@ -84,7 +84,7 @@
 
 
     <div class="form-group">
-      <label for="product-title">Product Quantity</label>
+      <label for="product-title">Quantité en stock</label>
         <input type="number" name="product_quantity" class="form-control">
     </div>
 
@@ -100,7 +100,7 @@
  -->
     <!-- Product Image -->
     <div class="form-group">
-        <label for="product-title">Product Image</label>
+        <label for="product-title">Image Produit</label>
         <input type="file" name="file">
 
     </div>
