@@ -190,7 +190,7 @@ $_SESSION['item_quantity'] = $item_quantity;
  function show_buy_button(){
      $buy_button = <<<DELIMETER
 
-<button id="btn" type="submit" class="btn btn-primary">Buy Now</button>
+<button id="btn" type="submit" class="btn btn-primary">Acheter Maintenant</button>
 
 DELIMETER;
 

@@ -1,7 +1,7 @@
 
 <?php add_category(); ?>
 <h1 class="page-header">
-  Product Categories
+    Catégories Produit
 
 </h1>
 
@@ -13,7 +13,7 @@
     <form action="" method="post">
     
         <div class="form-group">
-            <label for="category-title">Title</label>
+            <label for="category-title">Titre</label>
             <input name="cat_title" type="text" class="form-control">
         </div>
 
@@ -36,7 +36,7 @@
 
         <tr>
             <th>id</th>
-            <th>Title</th>
+            <th>Titre</th>
         </tr>
             </thead>
 

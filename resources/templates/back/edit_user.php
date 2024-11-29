@@ -1,6 +1,6 @@
 
                         <h1 class="page-header">
-                            Edit User
+                            Modifier Utilisateur
                             <small>Edwin</small>
                         </h1>
 
@@ -26,36 +26,36 @@
 
 
                            <div class="form-group">
-                            <label for="username">Username</label>
+                            <label for="username">Identifiant</label>
                             <input type="text" name="username" class="form-control"  >
                                
                            </div>
 
 
                             <div class="form-group">
-                                <label for="first name">First Name</label>
+                                <label for="first name">Prénom</label>
                             <input type="text" name="first_name" class="form-control"  >
                                
                            </div>
 
                             <div class="form-group">
-                                <label for="last name">Last Name</label>
+                                <label for="last name">Nom</label>
                             <input type="text" name="last_name" class="form-control" >
                                
                            </div>
 
 
                             <div class="form-group">
-                                <label for="password">Password</label>
+                                <label for="password">Mot de passe</label>
                             <input type="password" name="password" class="form-control">
                                
                            </div>
 
                             <div class="form-group">
 
-                            <a id="user-id" class="btn btn-danger" href="">Delete</a>
+                            <a id="user-id" class="btn btn-danger" href="">Supprimer</a>
 
-                            <input type="submit" name="update_user" class="btn btn-primary pull-right" value="Update" >
+                            <input type="submit" name="update_user" class="btn btn-primary pull-right" value="Mettre à jour" >
                                
                            </div>
 

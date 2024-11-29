@@ -2,7 +2,7 @@
  <div class="col-md-12">
 <div class="row">
 <h1 class="page-header">
-   All Orders
+   Toutes les commandes
 
 </h1>
 
@@ -15,10 +15,10 @@
 
       <tr>
            <th>id</th>
-           <th>Amount</th>
+           <th>Montant</th>
            <th>Transaction</th>
-           <th>Currency</th>
-           <th>Sattus</th>
+           <th>Devise</th>
+           <th>Statut</th>
    
       </tr>
     </thead>

@@ -1,34 +1,37 @@
 -- phpMyAdmin SQL Dump
--- version 4.9.7
+-- version 5.2.1
 -- https://www.phpmyadmin.net/
 --
--- Host: localhost:8889
--- Generation Time: Feb 05, 2022 at 08:28 PM
--- Server version: 5.7.32
--- PHP Version: 7.4.12
+-- Hôte : localhost
+-- Généré le : mer. 27 nov. 2024 à 18:58
+-- Version du serveur : 10.4.32-MariaDB
+-- Version de PHP : 8.2.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+START TRANSACTION;
 SET time_zone = "+00:00";
 
+
 --
--- Database: `ecom_db`
+-- Base de données : `qnrmqtu379xet78q`
 --
 
 -- --------------------------------------------------------
-
+CREATE DATABASE IF NOT EXISTS qnrmqtu379xet78q;
+USE qnrmqtu379xet78q;
 --
--- Table structure for table `categories`
+-- Structure de la table `categories`
 --
 
 CREATE TABLE `categories` (
                               `cat_id` int(11) NOT NULL,
                               `cat_title` varchar(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `orders`
+-- Structure de la table `orders`
 --
 
 CREATE TABLE `orders` (
@@ -38,18 +41,18 @@ CREATE TABLE `orders` (
                           `order_transaction` varchar(255) DEFAULT NULL,
                           `order_status` varchar(255) DEFAULT NULL,
                           `order_currency` varchar(255) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `products`
+-- Structure de la table `products`
 --
 
 CREATE TABLE `products` (
                             `product_id` int(11) NOT NULL,
                             `stripe_product_id` varchar(200) DEFAULT NULL,
-                            `active` tinyint(1) NOT NULL DEFAULT '1',
+                            `active` tinyint(1) NOT NULL DEFAULT 1,
                             `product_title` varchar(255) NOT NULL,
                             `product_category_id` int(11) NOT NULL,
                             `product_price` float NOT NULL,
@@ -58,12 +61,12 @@ CREATE TABLE `products` (
                             `product_description` text NOT NULL,
                             `short_desc` text NOT NULL,
                             `product_image` varchar(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `reports`
+-- Structure de la table `reports`
 --
 
 CREATE TABLE `reports` (
@@ -77,24 +80,12 @@ CREATE TABLE `reports` (
                            `product_title` varchar(255) DEFAULT NULL,
                            `product_quantity` int(11) DEFAULT NULL,
                            `product_total` int(11) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `slides`
---
-
-CREATE TABLE `slides` (
-                          `slide_title` varchar(255) NOT NULL,
-                          `slide_id` int(11) NOT NULL,
-                          `slide_image` text NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
--- --------------------------------------------------------
-
---
--- Table structure for table `users`
+-- Structure de la table `users`
 --
 
 CREATE TABLE `users` (
@@ -102,84 +93,73 @@ CREATE TABLE `users` (
                          `username` varchar(255) NOT NULL,
                          `email` varchar(255) NOT NULL,
                          `password` varchar(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
 --
--- Indexes for dumped tables
+-- Index pour les tables déchargées
 --
 
 --
--- Indexes for table `categories`
+-- Index pour la table `categories`
 --
 ALTER TABLE `categories`
     ADD PRIMARY KEY (`cat_id`);
 
 --
--- Indexes for table `orders`
+-- Index pour la table `orders`
 --
 ALTER TABLE `orders`
     ADD PRIMARY KEY (`order_id`);
 
 --
--- Indexes for table `products`
+-- Index pour la table `products`
 --
 ALTER TABLE `products`
     ADD PRIMARY KEY (`product_id`);
 
 --
--- Indexes for table `reports`
+-- Index pour la table `reports`
 --
 ALTER TABLE `reports`
     ADD PRIMARY KEY (`report_id`);
 
 --
--- Indexes for table `slides`
---
-ALTER TABLE `slides`
-    ADD PRIMARY KEY (`slide_id`);
-
---
--- Indexes for table `users`
+-- Index pour la table `users`
 --
 ALTER TABLE `users`
     ADD PRIMARY KEY (`user_id`);
 
 --
--- AUTO_INCREMENT for dumped tables
+-- AUTO_INCREMENT pour les tables déchargées
 --
 
 --
--- AUTO_INCREMENT for table `categories`
+-- AUTO_INCREMENT pour la table `categories`
 --
 ALTER TABLE `categories`
     MODIFY `cat_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=34;
 
 --
--- AUTO_INCREMENT for table `orders`
+-- AUTO_INCREMENT pour la table `orders`
 --
 ALTER TABLE `orders`
     MODIFY `order_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=112;
 
 --
--- AUTO_INCREMENT for table `products`
+-- AUTO_INCREMENT pour la table `products`
 --
 ALTER TABLE `products`
     MODIFY `product_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=165;
 
 --
--- AUTO_INCREMENT for table `reports`
+-- AUTO_INCREMENT pour la table `reports`
 --
 ALTER TABLE `reports`
     MODIFY `report_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=69;
 
 --
--- AUTO_INCREMENT for table `slides`
---
-ALTER TABLE `slides`
-    MODIFY `slide_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=29;
-
---
--- AUTO_INCREMENT for table `users`
+-- AUTO_INCREMENT pour la table `users`
 --
 ALTER TABLE `users`
     MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+COMMIT;

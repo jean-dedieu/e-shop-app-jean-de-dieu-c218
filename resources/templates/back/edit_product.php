@@ -46,7 +46,7 @@ update_product();
 
 <div class="row">
 <h1 class="page-header">
-   Edit Product
+   Modifier le Produit
 </h1>
 </div>
                
@@ -58,14 +58,14 @@ update_product();
 <div class="col-md-8">
 
 <div class="form-group">
-    <label for="product-title">Product Title </label>
+    <label for="product-title">Titre Produit</label>
         <input type="text" name="product_title" class="form-control" value="<?php echo $product_title; ?>">
        
     </div>
 
 
     <div class="form-group">
-           <label for="product-title">Product Description</label>
+           <label for="product-title">Description Produit</label>
       <textarea name="product_description" id="" cols="30" rows="10" class="form-control"><?php echo $product_description; ?></textarea>
     </div>
 
@@ -74,7 +74,7 @@ update_product();
     <div class="form-group row">
 
       <div class="col-xs-3">
-        <label for="product-price">Product Price</label>
+        <label for="product-price">Prix Produit</label>
         <input type="number" name="product_price" class="form-control" size="60" value="<?php echo $product_price; ?>">
       </div>
     </div>
@@ -82,7 +82,7 @@ update_product();
 
 
     <div class="form-group">
-           <label for="product-title">Product Short Description</label>
+           <label for="product-title">Description Brève Produit</label>
       <textarea name="short_desc" id="" cols="30" rows="3" class="form-control"><?php echo $short_desc; ?></textarea>
     </div>
 
@@ -107,7 +107,7 @@ update_product();
      <!-- Product Categories-->
 
     <div class="form-group">
-         <label for="product-title">Product Category</label>
+         <label for="product-title">Catégorie Produit</label>
 
         <select name="product_category_id" id="" class="form-control">
               
@@ -129,7 +129,7 @@ update_product();
 
 
     <div class="form-group">
-      <label for="product-title">Product Quantity</label>
+      <label for="product-title">Quantité en stock</label>
         <input type="number" name="product_quantity" class="form-control" value="<?php echo $product_quantity; ?>">
     </div>
 
@@ -145,7 +145,7 @@ update_product();
  -->
     <!-- Product Image -->
     <div class="form-group">
-        <label for="product-title">Product Image</label>
+        <label for="product-title">Image Produit</label>
         <input type="file" name="file"> <br>
 
         <img width='200' src="../../resources/<?php echo $product_image; ?>" alt="">

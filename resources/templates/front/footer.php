@@ -7,7 +7,7 @@
         <footer>
             <div class="row">
                 <div class="col-lg-12">
-                    <p>Copyright &copy; Jean de Dieu TWAGIRUMUHOZA-eMIAGE-C218-2024</p>
+                    <p>Copyright &copy; Jean de Dieu TWAGIRUMUHOZA-eMIAGE-C218 2024</p>
                 </div>
             </div>
         </footer>

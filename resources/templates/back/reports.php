@@ -1,6 +1,6 @@
 
 <h1 class="page-header">
-  Reports
+  Rapports
 </h1>
 
 <style>
@@ -23,11 +23,11 @@
 
       <tr>
            <th>Id</th>
-           <th>Customer Name</th>
-           <th>Customer email</th>
-           <th>Price</th>
-           <th>Product title</th>
-           <th>Product quantity</th>
+           <th>Nom client</th>
+           <th>E-mail client</th>
+           <th>Prix</th>
+           <th>Titre Produit</th>
+           <th>Quantité Produit</th>
            <th>Total</th>
       </tr>
     </thead>

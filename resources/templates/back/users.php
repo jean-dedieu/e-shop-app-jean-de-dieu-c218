@@ -3,14 +3,14 @@
                       
 
                         <h1 class="page-header">
-                            Users
+                            Utilisateurs
                          
                         </h1>
                           <p class="bg-success">
                          
                         </p>
 
-                        <a href="index.php?add_user" class="btn btn-primary">Add User</a>
+                        <a href="index.php?add_user" class="btn btn-primary">Ajout Utilisateur</a>
 
 
                         <div class="col-md-12">
@@ -19,8 +19,8 @@
                                 <thead>
                                     <tr>
                                         <th>Id</th>
-                                        <th>Username</th>
-                                        <th>Email</th>
+                                        <th>Identifiant</th>
+                                        <th>E-mail</th>
                             
                                     </tr>
                                 </thead>

@@ -109,7 +109,7 @@
                                             <tr>
                                                 <th>Commande #</th>
                                                 <th>Date Commande</th>
-                                                <th>Temps Commande</th>
+                                                <th>Heure Commande</th>
                                                 <th>Montant (USD)</th>
                                             </tr>
                                         </thead>
@@ -181,17 +181,17 @@
                      <div class="col-lg-6">
                         <div class="panel panel-default">
                             <div class="panel-heading">
-                                <h3 class="panel-title"><i class="fa fa-money fa-fw"></i> Transactions Panel</h3>
+                                <h3 class="panel-title"><i class="fa fa-money fa-fw"></i> Transactions</h3>
                             </div>
                             <div class="panel-body">
                                 <div class="table-responsive">
                                     <table class="table table-bordered table-hover table-striped">
                                         <thead>
                                             <tr>
-                                                <th>Order #</th>
-                                                <th>Order Date</th>
-                                                <th>Order Time</th>
-                                                <th>Amount (USD)</th>
+                                                <th>Commande #</th>
+                                                <th>Date Commande</th>
+                                                <th>Heure Commande</th>
+                                                <th>Montant (USD)</th>
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -247,7 +247,7 @@
                                     </table>
                                 </div>
                                 <div class="text-right">
-                                    <a href="#">View All Transactions <i class="fa fa-arrow-circle-right"></i></a>
+                                    <a href="#">Voir toutes les Transactions <i class="fa fa-arrow-circle-right"></i></a>
                                 </div>
                             </div>
                         </div>

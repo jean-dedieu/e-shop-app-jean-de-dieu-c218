@@ -1,6 +1,6 @@
 
 <h1 class="page-header">
-   All Products
+   Tous les Produits
 
 </h1>
 
@@ -12,10 +12,10 @@
 
       <tr>
            <th>Id</th>
-           <th>Title</th>
-           <th>Category</th>
-           <th>Price</th>
-           <th>Quantity</th>
+           <th>Titre</th>
+           <th>Catégorie</th>
+           <th>Prix</th>
+           <th>Quantité</th>
       </tr>
     </thead>
     <tbody>
