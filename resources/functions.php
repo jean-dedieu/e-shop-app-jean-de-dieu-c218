@@ -218,14 +218,14 @@ function get_products_with_pagination($perPage = "6")
 
         if ($page != 1) {
             $prev = $page - 1;
-            $outputPagination .= '<li class="page-item"><a class="page-link" href="' . $_SERVER['PHP_SELF'] . '?page=' . $prev . '">Back</a></li>';
+            $outputPagination .= '<li class="page-item"><a class="page-link" href="' . $_SERVER['PHP_SELF'] . '?page=' . $prev . '">Retour</a></li>';
         }
 
         $outputPagination .= $middleNumbers;
 
         if ($page != $lastPage) {
             $next = $page + 1;
-            $outputPagination .= '<li class="page-item"><a class="page-link" href="' . $_SERVER['PHP_SELF'] . '?page=' . $next . '">Next</a></li>';
+            $outputPagination .= '<li class="page-item"><a class="page-link" href="' . $_SERVER['PHP_SELF'] . '?page=' . $next . '">Suivant</a></li>';
         }
 
         while ($row = fetch_array($query2)) {
@@ -239,9 +239,8 @@ function get_products_with_pagination($perPage = "6")
             <h4 class="pull-right">&#36;{$row['product_price']}</h4>
             <h4><a href="item.php?id={$row['product_id']}">{$row['product_title']}</a>
             </h4>
-            <p>See more snippets like this online store item at <a target="_blank" href="http://www.bootsnipp.com">Bootsnipp - http://bootsnipp.com</a>.</p>
-             <p class="text-center"><a class="btn btn-primary" target="_blank" href="../resources/cart.php?add={$row['product_id']}">Add to cart</a>
-             </a> <a href="item.php?id={$row['product_id']}" class="btn btn-default">More Info</a></p>
+             <p class="text-center"><a class="btn btn-primary" target="_blank" href="../resources/cart.php?add={$row['product_id']}">Ajouter au Panier</a>
+             </a> <a href="item.php?id={$row['product_id']}" class="btn btn-default">Détails</a></p>
         </div>
     </div>
 </div>
@@ -252,9 +251,9 @@ DELIMETER;
 
         echo "<div class='text-center' style='clear: both;' ><ul class='pagination' >{$outputPagination}</ul></div>";
     } else {
-        echo "<h1 class='text-center'>No Products</h1>";
+        echo "<h1 class='text-center'>Pas de Produits</h1>";
         echo "<br>";
-        echo "<p class='text-center'>Create some products <a href='http://localhost:8888/ecom/public/admin/index.php?add_product'>HERE</a></p>";
+        echo "<p class='text-center'>Ajouter des Produits <a href='http://localhost:8888/ecom/public/admin/index.php?add_product'>HERE</a></p>";
     }
 
 }
