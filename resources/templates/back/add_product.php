@@ -67,7 +67,7 @@
          <label for="product-title">Catégorie produit</label>
 
         <select name="product_category_id" id="" class="form-control">
-            <option value="">Séléfctionner Catégorie</option>
+            <option value="">Séléctionner Catégorie</option>
 
             <?php show_categories_add_product_page(); ?>
 

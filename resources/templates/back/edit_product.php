@@ -99,8 +99,8 @@ update_product();
 
      
      <div class="form-group">
-       <input type="submit" name="draft" class="btn btn-warning btn-lg" value="Draft">
-        <input type="submit" name="update" class="btn btn-primary btn-lg" value="Update">
+       <input type="submit" name="draft" class="btn btn-warning btn-lg" value="Brouillon">
+        <input type="submit" name="update" class="btn btn-primary btn-lg" value="Mettre à jour">
     </div>
 
 

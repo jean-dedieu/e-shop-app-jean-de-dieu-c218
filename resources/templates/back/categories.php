@@ -19,7 +19,7 @@
 
         <div class="form-group">
             
-            <input name="add_category" type="submit" class="btn btn-primary" value="Add Category">
+            <input name="add_category" type="submit" class="btn btn-primary" value="Ajouter Catégorie">
         </div>      
 
 
