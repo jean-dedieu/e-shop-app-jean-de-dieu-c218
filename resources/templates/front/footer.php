@@ -8,7 +8,6 @@
             <div class="row">
                 <div class="col-lg-12">
                     <p>Réalisé Par Jean de Dieu TWAGIRUMUHOZA</p
-                    <p>Ingénieur logiciels @Capgemini</p>
                     <p>Etudiant M1 eMIAGE - Université de Picardie Jules Verne</p>
                     <p>C218 - Projet de Programmation</p>
                 </div>
